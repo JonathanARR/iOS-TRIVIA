@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D4FB76F2C6CF1D3004F764C /* JUEGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUEGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4FB76F2C6CF1D3004F764C /* TRIVIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRIVIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4FB7722C6CF1D3004F764C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D4FB7742C6CF1D3004F764C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D4FB7762C6CF1D3004F764C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		0D4FB7702C6CF1D3004F764C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D4FB76F2C6CF1D3004F764C /* JUEGO.app */,
+				0D4FB76F2C6CF1D3004F764C /* TRIVIA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0D4FB76E2C6CF1D3004F764C /* JUEGO */ = {
+		0D4FB76E2C6CF1D3004F764C /* TRIVIA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D4FB7832C6CF1D4004F764C /* Build configuration list for PBXNativeTarget "JUEGO" */;
+			buildConfigurationList = 0D4FB7832C6CF1D4004F764C /* Build configuration list for PBXNativeTarget "TRIVIA" */;
 			buildPhases = (
 				0D4FB76B2C6CF1D3004F764C /* Sources */,
 				0D4FB76C2C6CF1D3004F764C /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = JUEGO;
+			name = TRIVIA;
 			productName = JUEGO;
-			productReference = 0D4FB76F2C6CF1D3004F764C /* JUEGO.app */;
+			productReference = 0D4FB76F2C6CF1D3004F764C /* TRIVIA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0D4FB76A2C6CF1D3004F764C /* Build configuration list for PBXProject "JUEGO" */;
+			buildConfigurationList = 0D4FB76A2C6CF1D3004F764C /* Build configuration list for PBXProject "TRIVIA" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D4FB76E2C6CF1D3004F764C /* JUEGO */,
+				0D4FB76E2C6CF1D3004F764C /* TRIVIA */,
 			);
 		};
 /* End PBXProject section */
@@ -337,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D4FB76A2C6CF1D3004F764C /* Build configuration list for PBXProject "JUEGO" */ = {
+		0D4FB76A2C6CF1D3004F764C /* Build configuration list for PBXProject "TRIVIA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D4FB7812C6CF1D4004F764C /* Debug */,
@@ -346,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D4FB7832C6CF1D4004F764C /* Build configuration list for PBXNativeTarget "JUEGO" */ = {
+		0D4FB7832C6CF1D4004F764C /* Build configuration list for PBXNativeTarget "TRIVIA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D4FB7842C6CF1D4004F764C /* Debug */,
