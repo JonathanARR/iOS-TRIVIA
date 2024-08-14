@@ -1,0 +1,317 @@
+[
+    {
+        "questionText": "¿Cuál es la capital de Francia?",
+        "options": ["Berlín", "Madrid", "París", "Lisboa"],
+        "answer": "París"
+    },
+    {
+        "questionText": "¿Qué elemento químico tiene el símbolo 'O'?",
+        "options": ["Oro", "Oxígeno", "Osmio", "Oganesón"],
+        "answer": "Oxígeno"
+    },
+    {
+        "questionText": "¿En qué año llegó el hombre a la Luna?",
+        "options": ["1965", "1969", "1972", "1975"],
+        "answer": "1969"
+    },
+    {
+        "questionText": "¿Cuál es el planeta más cercano al Sol?",
+        "options": ["Venus", "Tierra", "Mercurio", "Marte"],
+        "answer": "Mercurio"
+    },
+    {
+        "questionText": "¿Quién escribió 'Cien años de soledad'?",
+        "options": ["Gabriel García Márquez", "Pablo Neruda", "Mario Vargas Llosa", "Jorge Luis Borges"],
+        "answer": "Gabriel García Márquez"
+    },
+    {
+        "questionText": "¿Cuál es el río más largo del mundo?",
+        "options": ["Nilo", "Amazonas", "Yangtsé", "Misisipi"],
+        "answer": "Nilo"
+    },
+    {
+        "questionText": "¿En qué continente se encuentra Egipto?",
+        "options": ["Asia", "África", "Europa", "América"],
+        "answer": "África"
+    },
+    {
+        "questionText": "¿Cuál es el órgano más grande del cuerpo humano?",
+        "options": ["Hígado", "Corazón", "Piel", "Pulmones"],
+        "answer": "Piel"
+    },
+    {
+        "questionText": "¿Qué gas es necesario para la respiración?",
+        "options": ["Hidrógeno", "Nitrógeno", "Oxígeno", "Helio"],
+        "answer": "Oxígeno"
+    },
+    {
+        "questionText": "¿Cuál es el idioma oficial de Brasil?",
+        "options": ["Español", "Portugués", "Francés", "Inglés"],
+        "answer": "Portugués"
+    },
+    {
+        "questionText": "¿Cuál es el continente más pequeño del mundo?",
+        "options": ["Oceanía", "Europa", "Asia", "África"],
+        "answer": "Oceanía"
+    },
+    {
+        "questionText": "¿Qué animal es conocido como el 'rey de la selva'?",
+        "options": ["Elefante", "Tigre", "León", "Jaguar"],
+        "answer": "León"
+    },
+    {
+        "questionText": "¿Quién pintó la 'Mona Lisa'?",
+        "options": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
+        "answer": "Leonardo da Vinci"
+    },
+    {
+        "questionText": "¿Cuál es el símbolo químico del oro?",
+        "options": ["Au", "Ag", "Fe", "Pb"],
+        "answer": "Au"
+    },
+    {
+        "questionText": "¿Qué país es conocido por la Torre Eiffel?",
+        "options": ["Francia", "Italia", "Alemania", "España"],
+        "answer": "Francia"
+    },
+    {
+        "questionText": "¿Cuál es la capital de Japón?",
+        "options": ["Seúl", "Pekín", "Tokio", "Hanoi"],
+        "answer": "Tokio"
+    },
+    {
+        "questionText": "¿Quién escribió 'Don Quijote de la Mancha'?",
+        "options": ["Miguel de Cervantes", "William Shakespeare", "Herman Melville", "Gabriel García Márquez"],
+        "answer": "Miguel de Cervantes"
+    },
+    {
+        "questionText": "¿En qué océano se encuentra la Gran Barrera de Coral?",
+        "options": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+        "answer": "Pacífico"
+    },
+    {
+        "questionText": "¿Cuál es el animal terrestre más grande del mundo?",
+        "options": ["Rino", "Elefante", "Jirafa", "Hipopótamo"],
+        "answer": "Elefante"
+    },
+    {
+        "questionText": "¿Qué inventó Thomas Edison?",
+        "options": ["La bombilla", "El teléfono", "La radio", "El avión"],
+        "answer": "La bombilla"
+    },
+    {
+        "questionText": "¿Cuál es el deporte nacional de Japón?",
+        "options": ["Sumo", "Judo", "Karate", "Aikido"],
+        "answer": "Sumo"
+    },
+    {
+        "questionText": "¿Qué continente tiene más países?",
+        "options": ["África", "Asia", "Europa", "América"],
+        "answer": "África"
+    },
+    {
+        "questionText": "¿Quién fue el primer presidente de Estados Unidos?",
+        "options": ["Thomas Jefferson", "Abraham Lincoln", "George Washington", "John Adams"],
+        "answer": "George Washington"
+    },
+    {
+        "questionText": "¿Cuál es la montaña más alta del mundo?",
+        "options": ["K2", "Kangchenjunga", "Everest", "Makalu"],
+        "answer": "Everest"
+    },
+    {
+        "questionText": "¿En qué año se independizó Estados Unidos de Gran Bretaña?",
+        "options": ["1776", "1789", "1792", "1804"],
+        "answer": "1776"
+    },
+    {
+        "questionText": "¿Qué es el ADN?",
+        "options": ["Ácido desoxirribonucleico", "Ácido ribonucleico", "Proteína", "Carbohidrato"],
+        "answer": "Ácido desoxirribonucleico"
+    },
+    {
+        "questionText": "¿Qué país tiene la mayor población del mundo?",
+        "options": ["India", "Estados Unidos", "China", "Indonesia"],
+        "answer": "China"
+    },
+    {
+        "questionText": "¿Quién es el autor de 'Harry Potter'?",
+        "options": ["J.K. Rowling", "J.R.R. Tolkien", "C.S. Lewis", "George R.R. Martin"],
+        "answer": "J.K. Rowling"
+    },
+    {
+        "questionText": "¿Cuál es el océano más grande del mundo?",
+        "options": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+        "answer": "Pacífico"
+    },
+    {
+        "questionText": "¿Cuál es el símbolo químico del hierro?",
+        "options": ["Fe", "Ir", "I", "Hg"],
+        "answer": "Fe"
+    },
+    {
+        "questionText": "¿Qué planeta es conocido como el 'planeta rojo'?",
+        "options": ["Marte", "Júpiter", "Saturno", "Venus"],
+        "answer": "Marte"
+    },
+    {
+        "questionText": "¿Quién pintó 'La noche estrellada'?",
+        "options": ["Vincent van Gogh", "Claude Monet", "Edvard Munch", "Pablo Picasso"],
+        "answer": "Vincent van Gogh"
+    },
+    {
+        "questionText": "¿Qué es la Teoría de la Relatividad?",
+        "options": ["Una teoría física", "Una teoría química", "Una teoría biológica", "Una teoría matemática"],
+        "answer": "Una teoría física"
+    },
+    {
+        "questionText": "¿Cuál es el país más grande del mundo por superficie?",
+        "options": ["Canadá", "China", "Rusia", "Estados Unidos"],
+        "answer": "Rusia"
+    },
+    {
+        "questionText": "¿Cuál es el animal marino más grande del mundo?",
+        "options": ["Tiburón ballena", "Ballena azul", "Orca", "Delfín"],
+        "answer": "Ballena azul"
+    },
+    {
+        "questionText": "¿Quién escribió 'El Principito'?",
+        "options": ["Antoine de Saint-Exupéry", "J.K. Rowling", "Charles Dickens", "Hermann Hesse"],
+        "answer": "Antoine de Saint-Exupéry"
+    },
+    {
+        "questionText": "¿Qué gas compone la mayor parte de la atmósfera terrestre?",
+        "options": ["Oxígeno", "Nitrógeno", "Dióxido de carbono", "Argón"],
+        "answer": "Nitrógeno"
+    },
+    {
+        "questionText": "¿Cuál es el símbolo químico del carbono?",
+        "options": ["C", "Ca", "Co", "Cr"],
+        "answer": "C"
+    },
+    {
+        "questionText": "¿Qué es el Big Bang?",
+        "options": ["Una teoría sobre el origen del universo", "Una explosión nuclear", "Un fenómeno meteorológico", "Un evento histórico"],
+        "answer": "Una teoría sobre el origen del universo"
+    },
+    {
+        "questionText": "¿Cuál es la capital de Italia?",
+        "options": ["Venecia", "Florencia", "Roma", "Milán"],
+        "answer": "Roma"
+    },
+    {
+        "questionText": "¿Qué planeta tiene los anillos más conocidos del sistema solar?",
+        "options": ["Júpiter", "Saturno", "Urano", "Neptuno"],
+        "answer": "Saturno"
+    },
+    {
+        "questionText": "¿En qué país se encuentra la ciudad de Marrakech?",
+        "options": ["Egipto", "Marruecos", "Túnez", "Argelia"],
+        "answer": "Marruecos"
+    },
+    {
+        "questionText": "¿Quién es conocido como el 'padre de la física moderna'?",
+        "options": ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Galileo Galilei"],
+        "answer": "Albert Einstein"
+    },
+    {
+        "questionText": "¿Cuál es el continente más grande del mundo?",
+        "options": ["Asia", "América", "África", "Europa"],
+        "answer": "Asia"
+    },
+    {
+        "questionText": "¿Qué parte del cuerpo humano produce insulina?",
+        "options": ["Hígado", "Riñones", "Páncreas", "Corazón"],
+        "answer": "Páncreas"
+    },
+    {
+        "questionText": "¿Cuál es la capital de Australia?",
+        "options": ["Sídney", "Melbourne", "Brisbane", "Canberra"],
+        "answer": "Canberra"
+    },
+    {
+        "questionText": "¿Cuál es el deporte más popular del mundo?",
+        "options": ["Fútbol", "Baloncesto", "Tenis", "Críquet"],
+        "answer": "Fútbol"
+    },
+    {
+        "questionText": "¿En qué continente se encuentra el desierto del Sahara?",
+        "options": ["África", "Asia", "América", "Oceanía"],
+        "answer": "África"
+    },
+    {
+        "questionText": "¿Quién pintó 'La última cena'?",
+        "options": ["Leonardo da Vinci", "Rafael", "Michelangelo", "Caravaggio"],
+        "answer": "Leonardo da Vinci"
+    },
+    {
+        "questionText": "¿Qué tipo de animal es el delfín?",
+        "options": ["Mamífero", "Pez", "Reptil", "Aves"],
+        "answer": "Mamífero"
+    },
+    {
+        "questionText": "¿Qué continente tiene el río Amazonas?",
+        "options": ["África", "Asia", "América del Sur", "Oceanía"],
+        "answer": "América del Sur"
+    },
+    {
+        "questionText": "¿Cuál es el símbolo químico del sodio?",
+        "options": ["Na", "So", "Sd", "Si"],
+        "answer": "Na"
+    },
+    {
+        "questionText": "¿Cuál es la capital de España?",
+        "options": ["Barcelona", "Sevilla", "Madrid", "Valencia"],
+        "answer": "Madrid"
+    },
+    {
+        "questionText": "¿Qué científico formuló las leyes del movimiento y la gravitación universal?",
+        "options": ["Isaac Newton", "Galileo Galilei", "Nicolas Copernicus", "James Clerk Maxwell"],
+        "answer": "Isaac Newton"
+    },
+    {
+        "questionText": "¿Cuál es el planeta más grande del sistema solar?",
+        "options": ["Júpiter", "Saturno", "Neptuno", "Urano"],
+        "answer": "Júpiter"
+    },
+    {
+        "questionText": "¿Qué es la fotosíntesis?",
+        "options": ["Un proceso de conversión de energía en las plantas", "Un tipo de respiración celular", "Un método de reproducción animal", "Un fenómeno atmosférico"],
+        "answer": "Un proceso de conversión de energía en las plantas"
+    },
+    {
+        "questionText": "¿Qué país es famoso por la producción de vino de Bordeaux?",
+        "options": ["Francia", "Italia", "España", "Alemania"],
+        "answer": "Francia"
+    },
+    {
+        "questionText": "¿Cuál es el animal nacional de Australia?",
+        "options": ["Canguro", "Koala", "Emú", "Dingo"],
+        "answer": "Canguro"
+    },
+    {
+        "questionText": "¿En qué país se encuentra la ciudad de Petra?",
+        "options": ["Jordania", "Egipto", "Israel", "Líbano"],
+        "answer": "Jordania"
+    },
+    {
+        "questionText": "¿Qué océano está al este de África?",
+        "options": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+        "answer": "Índico"
+    },
+    {
+        "questionText": "¿Cuál es el país más pequeño del mundo?",
+        "options": ["Mónaco", "San Marino", "Vaticano", "Liechtenstein"],
+        "answer": "Vaticano"
+    },
+    {
+        "questionText": "¿Qué elemento químico tiene el símbolo 'Cl'?",
+        "options": ["Cloro", "Carbono", "Cobalto", "Calcio"],
+        "answer": "Cloro"
+    },
+    {
+        "questionText": "¿En qué año terminó la Segunda Guerra Mundial?",
+        "options": ["1942", "1944", "1945", "1946"],
+        "answer": "1945"
+    }
+]
