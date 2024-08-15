@@ -8,5 +8,8 @@
 import UIKit
 
 class TimerManager: NSObject {
-
+    
+    var timer = Timer()
+    var seconds = 0
+    
 }

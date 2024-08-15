@@ -14,6 +14,11 @@
 		0D4FB77C2C6CF1D4004F764C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FB77B2C6CF1D4004F764C /* Assets.xcassets */; };
 		0D4FB77F2C6CF1D4004F764C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FB77D2C6CF1D4004F764C /* LaunchScreen.storyboard */; };
 		0D4FB7872C6D0E7C004F764C /* SplashWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FB7862C6D0E7C004F764C /* SplashWindowViewController.swift */; };
+		0DA7740D2C6E846600E60F2F /* quiz_w.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA774072C6E846600E60F2F /* quiz_w.png */; };
+		0DA7740E2C6E846600E60F2F /* MTLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DA774082C6E846600E60F2F /* MTLogo.jpg */; };
+		0DA7740F2C6E846600E60F2F /* bg-removebg-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA774092C6E846600E60F2F /* bg-removebg-preview.png */; };
+		0DA774102C6E846600E60F2F /* avatar0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA7740B2C6E846600E60F2F /* avatar0.png */; };
+		0DA774112C6E846600E60F2F /* quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA7740C2C6E846600E60F2F /* quiz.png */; };
 		0DB6AB632C6D1359009D8E89 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6AB622C6D1359009D8E89 /* MenuViewController.swift */; };
 		0DB6AB652C6D1386009D8E89 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6AB642C6D1386009D8E89 /* RecordsViewController.swift */; };
 		0DB6AB672C6D1392009D8E89 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6AB662C6D1392009D8E89 /* InfoViewController.swift */; };
@@ -21,10 +26,6 @@
 		0DB6AB6D2C6D1834009D8E89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB6AB6B2C6D1834009D8E89 /* AVFoundation.framework */; };
 		0DB6AB6E2C6D1834009D8E89 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB6AB6C2C6D1834009D8E89 /* AVKit.framework */; };
 		0DB6AB702C6D24B8009D8E89 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6AB6F2C6D24B8009D8E89 /* StartViewController.swift */; };
-		0DB6AB772C6D2BDF009D8E89 /* bg-removebg-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB6AB762C6D2BDF009D8E89 /* bg-removebg-preview.png */; };
-		0DB6AB7B2C6D3568009D8E89 /* quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB6AB7A2C6D3568009D8E89 /* quiz.png */; };
-		0DB6AB7E2C6D3AFA009D8E89 /* quiz_w.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB6AB7C2C6D3AFA009D8E89 /* quiz_w.png */; };
-		0DB6AB872C6D460D009D8E89 /* MTLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB6AB862C6D460D009D8E89 /* MTLogo.jpg */; };
 		0DB6AB8A2C6D49BA009D8E89 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6AB892C6D49BA009D8E89 /* Player.swift */; };
 		0DB6AB8C2C6D4CFC009D8E89 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6AB8B2C6D4CFC009D8E89 /* Question.swift */; };
 		0DB6AB8E2C6D5339009D8E89 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DB6AB8D2C6D5339009D8E89 /* questions.json */; };
@@ -44,6 +45,11 @@
 		0D4FB77E2C6CF1D4004F764C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D4FB7802C6CF1D4004F764C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D4FB7862C6D0E7C004F764C /* SplashWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWindowViewController.swift; sourceTree = "<group>"; };
+		0DA774072C6E846600E60F2F /* quiz_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz_w.png; sourceTree = "<group>"; };
+		0DA774082C6E846600E60F2F /* MTLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTLogo.jpg; sourceTree = "<group>"; };
+		0DA774092C6E846600E60F2F /* bg-removebg-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-removebg-preview.png"; sourceTree = "<group>"; };
+		0DA7740B2C6E846600E60F2F /* avatar0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar0.png; sourceTree = "<group>"; };
+		0DA7740C2C6E846600E60F2F /* quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz.png; sourceTree = "<group>"; };
 		0DB6AB622C6D1359009D8E89 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0DB6AB642C6D1386009D8E89 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 		0DB6AB662C6D1392009D8E89 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -51,10 +57,6 @@
 		0DB6AB6B2C6D1834009D8E89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0DB6AB6C2C6D1834009D8E89 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		0DB6AB6F2C6D24B8009D8E89 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		0DB6AB762C6D2BDF009D8E89 /* bg-removebg-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-removebg-preview.png"; sourceTree = "<group>"; };
-		0DB6AB7A2C6D3568009D8E89 /* quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz.png; sourceTree = "<group>"; };
-		0DB6AB7C2C6D3AFA009D8E89 /* quiz_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz_w.png; sourceTree = "<group>"; };
-		0DB6AB862C6D460D009D8E89 /* MTLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTLogo.jpg; sourceTree = "<group>"; };
 		0DB6AB892C6D49BA009D8E89 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0DB6AB8B2C6D4CFC009D8E89 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		0DB6AB8D2C6D5339009D8E89 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = questions.json; path = ../../questions.json; sourceTree = "<group>"; };
@@ -99,7 +101,6 @@
 			children = (
 				0D4FB7722C6CF1D3004F764C /* AppDelegate.swift */,
 				0D4FB7742C6CF1D3004F764C /* SceneDelegate.swift */,
-				0D4FB7862C6D0E7C004F764C /* SplashWindowViewController.swift */,
 				0D4FB77D2C6CF1D4004F764C /* LaunchScreen.storyboard */,
 				0D4FB7782C6CF1D3004F764C /* Main.storyboard */,
 				0D4FB77B2C6CF1D4004F764C /* Assets.xcassets */,
@@ -107,10 +108,31 @@
 				0D4FB7802C6CF1D4004F764C /* Info.plist */,
 				0DB6AB912C6D54CB009D8E89 /* Models */,
 				0DB6AB882C6D496E009D8E89 /* Views */,
+				0DA774062C6E846600E60F2F /* Resources-Trivia */,
 				0DB6AB972C6D603A009D8E89 /* Managers */,
-				0DB6AB712C6D2AF5009D8E89 /* Resources-Trivia */,
 			);
 			path = JUEGO;
+			sourceTree = "<group>";
+		};
+		0DA774062C6E846600E60F2F /* Resources-Trivia */ = {
+			isa = PBXGroup;
+			children = (
+				0DA774072C6E846600E60F2F /* quiz_w.png */,
+				0DA774082C6E846600E60F2F /* MTLogo.jpg */,
+				0DA774092C6E846600E60F2F /* bg-removebg-preview.png */,
+				0DA7740C2C6E846600E60F2F /* quiz.png */,
+				0DA7740A2C6E846600E60F2F /* Avatars */,
+			);
+			name = "Resources-Trivia";
+			path = "../../Resources-Trivia";
+			sourceTree = "<group>";
+		};
+		0DA7740A2C6E846600E60F2F /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				0DA7740B2C6E846600E60F2F /* avatar0.png */,
+			);
+			path = Avatars;
 			sourceTree = "<group>";
 		};
 		0DB6AB6A2C6D1834009D8E89 /* Frameworks */ = {
@@ -122,21 +144,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0DB6AB712C6D2AF5009D8E89 /* Resources-Trivia */ = {
-			isa = PBXGroup;
-			children = (
-				0DB6AB862C6D460D009D8E89 /* MTLogo.jpg */,
-				0DB6AB7C2C6D3AFA009D8E89 /* quiz_w.png */,
-				0DB6AB7A2C6D3568009D8E89 /* quiz.png */,
-				0DB6AB762C6D2BDF009D8E89 /* bg-removebg-preview.png */,
-			);
-			name = "Resources-Trivia";
-			path = "../../Resources-Trivia";
-			sourceTree = "<group>";
-		};
 		0DB6AB882C6D496E009D8E89 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D4FB7862C6D0E7C004F764C /* SplashWindowViewController.swift */,
 				0D4FB7762C6CF1D3004F764C /* ViewController.swift */,
 				0DB6AB622C6D1359009D8E89 /* MenuViewController.swift */,
 				0DB6AB6F2C6D24B8009D8E89 /* StartViewController.swift */,
@@ -235,12 +246,13 @@
 			files = (
 				0D4FB77F2C6CF1D4004F764C /* LaunchScreen.storyboard in Resources */,
 				0DB6AB8E2C6D5339009D8E89 /* questions.json in Resources */,
-				0DB6AB7E2C6D3AFA009D8E89 /* quiz_w.png in Resources */,
-				0DB6AB7B2C6D3568009D8E89 /* quiz.png in Resources */,
+				0DA774112C6E846600E60F2F /* quiz.png in Resources */,
 				0D4FB77C2C6CF1D4004F764C /* Assets.xcassets in Resources */,
-				0DB6AB872C6D460D009D8E89 /* MTLogo.jpg in Resources */,
+				0DA7740D2C6E846600E60F2F /* quiz_w.png in Resources */,
+				0DA7740F2C6E846600E60F2F /* bg-removebg-preview.png in Resources */,
+				0DA774102C6E846600E60F2F /* avatar0.png in Resources */,
 				0D4FB77A2C6CF1D3004F764C /* Main.storyboard in Resources */,
-				0DB6AB772C6D2BDF009D8E89 /* bg-removebg-preview.png in Resources */,
+				0DA7740E2C6E846600E60F2F /* MTLogo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
