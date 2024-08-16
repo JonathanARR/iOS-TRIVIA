@@ -2,6 +2,7 @@ import UIKit
 
 class MenuViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var viewAvatar: UIView!
     @IBOutlet weak var imvAvatar: UIImageView!
     @IBOutlet weak var txfNickname: UITextField!
     @IBOutlet weak var btnStart: UIButton!
@@ -18,12 +19,28 @@ class MenuViewController: UIViewController, UITextFieldDelegate {
         updateStartButtonState(isEnabled: false) // Inicializar el botón como deshabilitado
     }
     
+    override func viewDidLayoutSubviews() {
+        viewAvatar.makeRoundView()
+        viewAvatar.layer.borderWidth = 7.5
+        viewAvatar.layer.borderColor = UIColor.systemYellow.cgColor
+        
+        btnStart.makeRoundView(cornerRadius: 5.0)
+    }
+    
     @objc func textFieldDidChange(_ textField: UITextField) {
         if let text = textField.text, isValidNickname(text) {
             updateStartButtonState(isEnabled: true)
         } else {
             updateStartButtonState(isEnabled: false)
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == txfNickname {
+            startGame(btnStart)
+            textField.resignFirstResponder() // Oculta el teclado
+        }
+        return true
     }
     
     func isValidNickname(_ nickname: String) -> Bool {
@@ -63,11 +80,43 @@ class MenuViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func startGame(_ sender: UIButton) {
-        // Asegúrate de que el segue esté correctamente conectado en el storyboard
         if self.isViewLoaded && (self.view.window != nil) {
-            performSegue(withIdentifier: "sgStart", sender: self)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let startVC = storyboard.instantiateViewController(withIdentifier: "StartViewController") as? StartViewController else {
+                print("ERROR")
+                return
+            }
+            
+            let player = Player(name: txfNickname.text ?? "N", score: 0)
+            startVC.player = player
+            let navigationController = UINavigationController(rootViewController: startVC)
+            navigationController.modalPresentationStyle = .fullScreen
+            navigationController.setNavigationBarHidden(true, animated: false)
+            self.present(navigationController, animated: true, completion: nil)
         } else {
             print("MenuViewController no está completamente cargado o visible")
         }
+    }
+}
+
+extension UIView {
+    func makeRoundView(cornerRadius: CGFloat? = nil) {
+        if let radius = cornerRadius {
+            self.layer.cornerRadius = radius
+        } else {
+            self.layer.cornerRadius = self.frame.size.width / 2.0
+        }
+        self.clipsToBounds = true
+    }
+}
+
+extension UIButton {
+    func makeRoundButton(cornerRadius: CGFloat? = nil) {
+        if let radius = cornerRadius {
+            self.layer.cornerRadius = radius
+        } else {
+            self.layer.cornerRadius = self.frame.size.width / 2.0
+        }
+        self.clipsToBounds = true
     }
 }

@@ -11,7 +11,7 @@
         <!--Splash Window View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SplashWindowViewController" customModule="TRIVIA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" id="BYZ-38-t0r" customClass="SplashWindowViewController" customModule="TRIVIA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRIVIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc6-1B-KWa">
                                         <rect key="frame" x="215" y="16.333333333333329" width="215" height="42"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -136,7 +136,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRIVIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbt-j1-J5g">
                                         <rect key="frame" x="215" y="16.333333333333329" width="215" height="42"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                        <color key="textColor" systemColor="systemCyanColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -194,7 +194,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRIVIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxf-S5-jyO">
                                         <rect key="frame" x="215" y="16.333333333333329" width="215" height="42"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -227,17 +227,17 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwU-Be-AQd">
-                                <rect key="frame" x="107.66666666666669" y="282.66666666666669" width="215" height="215"/>
+                                <rect key="frame" x="86" y="239.66666666666663" width="258" height="258"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar0.png" translatesAutoresizingMaskIntoConstraints="NO" id="S9O-W0-uWW">
-                                        <rect key="frame" x="0.0" y="0.0" width="215" height="215"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="258" height="266.66666666666669"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.70880520403987224" green="0.2105515095237476" blue="0.27712728024422106" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="S9O-W0-uWW" firstAttribute="top" secondItem="TwU-Be-AQd" secondAttribute="top" id="DJO-9F-DGt"/>
                                     <constraint firstAttribute="width" secondItem="TwU-Be-AQd" secondAttribute="height" id="Lrz-eE-7uC"/>
-                                    <constraint firstAttribute="bottom" secondItem="S9O-W0-uWW" secondAttribute="bottom" id="eBm-Hh-L26"/>
+                                    <constraint firstAttribute="bottom" secondItem="S9O-W0-uWW" secondAttribute="bottom" multiplier="0.9675" id="eBm-Hh-L26"/>
                                     <constraint firstAttribute="trailing" secondItem="S9O-W0-uWW" secondAttribute="trailing" id="g7u-Ir-oRZ"/>
                                     <constraint firstItem="S9O-W0-uWW" firstAttribute="leading" secondItem="TwU-Be-AQd" secondAttribute="leading" id="oRu-Y2-dWQ"/>
                                 </constraints>
@@ -260,7 +260,7 @@
                             <constraint firstItem="zaB-eK-E9z" firstAttribute="leading" secondItem="Eqh-yy-9YZ" secondAttribute="leading" id="jOf-8q-bcv"/>
                             <constraint firstItem="DYG-fQ-n5u" firstAttribute="top" secondItem="TwU-Be-AQd" secondAttribute="bottom" multiplier="1.1" id="laL-0R-J27"/>
                             <constraint firstItem="hQT-Wf-tmV" firstAttribute="leading" secondItem="Eqh-yy-9YZ" secondAttribute="leading" id="mKl-pp-N60"/>
-                            <constraint firstItem="TwU-Be-AQd" firstAttribute="width" secondItem="Eqh-yy-9YZ" secondAttribute="width" multiplier="0.5" id="mkI-2r-bjL"/>
+                            <constraint firstItem="TwU-Be-AQd" firstAttribute="width" secondItem="Eqh-yy-9YZ" secondAttribute="width" multiplier="0.6" id="mkI-2r-bjL"/>
                             <constraint firstItem="DYG-fQ-n5u" firstAttribute="width" secondItem="F0I-Ph-7gr" secondAttribute="width" multiplier="0.8" id="moc-ni-4Po"/>
                             <constraint firstItem="tfw-fw-KCh" firstAttribute="height" secondItem="DYG-fQ-n5u" secondAttribute="height" multiplier="1.25" id="u25-FU-r23"/>
                             <constraint firstItem="tfw-fw-KCh" firstAttribute="width" secondItem="DYG-fQ-n5u" secondAttribute="width" multiplier="0.4" id="vsQ-DR-biG"/>
@@ -271,7 +271,8 @@
                         <outlet property="btnStart" destination="tfw-fw-KCh" id="cfH-lo-bUK"/>
                         <outlet property="imvAvatar" destination="S9O-W0-uWW" id="kOZ-Em-tb2"/>
                         <outlet property="txfNickname" destination="DYG-fQ-n5u" id="ngy-Cz-CWw"/>
-                        <segue destination="FR0-To-zN4" kind="show" identifier="sgStart" id="xwc-cm-FAh"/>
+                        <outlet property="viewAvatar" destination="TwU-Be-AQd" id="Eo1-N6-fdH"/>
+                        <segue destination="FR0-To-zN4" kind="presentation" identifier="sgStart" id="xwc-cm-FAh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4uN-Qi-mCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -281,7 +282,7 @@
         <!--Game View Controller-->
         <scene sceneID="U2W-hC-gp6">
             <objects>
-                <viewController storyboardIdentifier="GameViewController" modalPresentationStyle="fullScreen" id="iUe-zD-XOH" customClass="GameViewController" customModule="TRIVIA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="iUe-zD-XOH" customClass="GameViewController" customModule="TRIVIA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GZ0-x7-gix">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,7 +291,7 @@
                                 <rect key="frame" x="0.0" y="59.000000000000007" width="430" height="74.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnK-Mb-09C">
-                                        <rect key="frame" x="10" y="20.333333333333329" width="81" height="34"/>
+                                        <rect key="frame" x="10" y="20.333333333333329" width="107.66666666666667" height="34"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -335,7 +336,7 @@
                                     <constraint firstAttribute="trailing" secondItem="fBK-Gn-p7T" secondAttribute="trailing" constant="10" id="N1x-VG-OMv"/>
                                     <constraint firstItem="S3r-DF-ROH" firstAttribute="top" secondItem="YBY-JP-qYE" secondAttribute="bottom" id="Xwb-O6-v94"/>
                                     <constraint firstItem="fBK-Gn-p7T" firstAttribute="height" secondItem="wYi-Qf-eYo" secondAttribute="height" multiplier="0.65" id="eGZ-x6-Yoa"/>
-                                    <constraint firstItem="KnK-Mb-09C" firstAttribute="width" secondItem="wYi-Qf-eYo" secondAttribute="width" multiplier="0.188372" id="w6N-Ub-IBP"/>
+                                    <constraint firstItem="KnK-Mb-09C" firstAttribute="width" secondItem="wYi-Qf-eYo" secondAttribute="width" multiplier="0.25" id="w6N-Ub-IBP"/>
                                     <constraint firstItem="5AH-u9-JOP" firstAttribute="centerY" secondItem="fBK-Gn-p7T" secondAttribute="centerY" id="xzt-bw-FSO"/>
                                 </constraints>
                             </view>
@@ -350,38 +351,50 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gap-Oi-ufM">
                                         <rect key="frame" x="43" y="29.000000000000004" width="344" height="58.333333333333343"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Answer1">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerSelected:" destination="iUe-zD-XOH" eventType="touchUpInside" id="qre-z8-9ba"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8v-BZ-xxB">
                                         <rect key="frame" x="43" y="145.66666666666663" width="344" height="58.333333333333343"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Answer2">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerSelected:" destination="iUe-zD-XOH" eventType="touchUpInside" id="3fj-NY-4W6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acg-W8-xQR">
                                         <rect key="frame" x="43" y="378.66666666666663" width="344" height="58.333333333333314"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Answer4">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerSelected:" destination="iUe-zD-XOH" eventType="touchUpInside" id="jSD-NH-pKW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAa-Su-3xQ">
                                         <rect key="frame" x="43" y="262" width="344" height="58.333333333333314"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Answer3">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerSelected:" destination="iUe-zD-XOH" eventType="touchUpInside" id="h8U-iX-mjR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -454,11 +467,12 @@
                         <outlet property="lblQuestion" destination="BXw-56-fPO" id="dm6-sB-Hh3"/>
                         <outlet property="lblQuestionIndex" destination="KnK-Mb-09C" id="3W1-ek-5hF"/>
                         <outlet property="lblTimer" destination="S3r-DF-ROH" id="3iQ-CC-U3e"/>
+                        <outlet property="pgvQuestionIndex" destination="u0q-Kb-vU9" id="3Yl-UO-wZ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCD-Nj-bev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936.7441860465117" y="-637.33905579399141"/>
+            <point key="canvasLocation" x="1965" y="-637"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="a6w-Gm-aVz">
@@ -494,6 +508,8 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="300"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="15" height="20"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CdE-qc-ucE">
                                 <rect key="frame" x="107.66666666666669" y="646.33333333333337" width="215" height="4"/>
@@ -521,7 +537,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LA2-sO-iS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1216.7441860465117" y="-637.33905579399141"/>
+            <point key="canvasLocation" x="1221" y="-637"/>
         </scene>
     </scenes>
     <resources>
@@ -533,6 +549,9 @@
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="info.circle.fill" catalog="system" width="128" height="123"/>
         <image name="trophy.fill" catalog="system" width="128" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

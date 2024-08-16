@@ -14,7 +14,6 @@ class SplashWindowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Inicio del splash
         imvSplash.alpha = 0.0
         imvSplash.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         pgvCarga.progress = 0.0
@@ -23,12 +22,10 @@ class SplashWindowViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Animación
-        UIView.animate(withDuration: 1.75, animations: {
+        UIView.animate(withDuration: 1, animations: {
             self.imvSplash.alpha = 1.0
             self.imvSplash.transform = CGAffineTransform.identity
         }) { _ in
-            // Iniciar la animación de la barra de progreso
             self.animateProgress()
         }
     }

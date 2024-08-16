@@ -27,6 +27,7 @@ class Game {
         } else {
             lives -= 1
         }
+        print(score)
         return correct
     }
     
