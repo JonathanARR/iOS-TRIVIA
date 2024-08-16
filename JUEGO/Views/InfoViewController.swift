@@ -15,6 +15,15 @@ class InfoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func toggleMute(_ sender: UIButton) {
+        if SoundManager.shared.isMuted {
+            SoundManager.shared.unmute()
+            sender.setTitle("Mute", for: .normal)
+        } else {
+            SoundManager.shared.mute()
+            sender.setTitle("Unmute", for: .normal)
+        }
+    }
 
     /*
     // MARK: - Navigation

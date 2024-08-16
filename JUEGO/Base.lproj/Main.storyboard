@@ -151,6 +151,15 @@
                                     <constraint firstItem="2B9-yj-RTV" firstAttribute="centerY" secondItem="JfO-oz-aJp" secondAttribute="centerY" id="qAQ-aU-0uS"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoa-6B-mrT">
+                                <rect key="frame" x="156" y="408" width="119" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="volume.slash.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="toggleMute:" destination="g5L-A7-s5r" eventType="touchUpInside" id="ycR-Q3-aqO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bGE-bn-fP5"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
@@ -169,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SHh-Pe-fK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488" y="640"/>
+            <point key="canvasLocation" x="486.97674418604652" y="639.9141630901288"/>
         </scene>
         <!--Play-->
         <scene sceneID="21v-QJ-5JJ">
@@ -468,6 +477,7 @@
                         <outlet property="lblQuestionIndex" destination="KnK-Mb-09C" id="3W1-ek-5hF"/>
                         <outlet property="lblTimer" destination="S3r-DF-ROH" id="3iQ-CC-U3e"/>
                         <outlet property="pgvQuestionIndex" destination="u0q-Kb-vU9" id="3Yl-UO-wZ4"/>
+                        <outlet property="viewQuestion" destination="XkY-OO-LaV" id="ul4-7v-hU3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCD-Nj-bev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -549,6 +559,7 @@
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="info.circle.fill" catalog="system" width="128" height="123"/>
         <image name="trophy.fill" catalog="system" width="128" height="128"/>
+        <image name="volume.slash.fill" catalog="system" width="118" height="128"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

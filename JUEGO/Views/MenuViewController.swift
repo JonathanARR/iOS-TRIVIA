@@ -86,17 +86,21 @@ class MenuViewController: UIViewController, UITextFieldDelegate {
                 print("ERROR")
                 return
             }
-            
+
             let player = Player(name: txfNickname.text ?? "N", score: 0)
             startVC.player = player
             let navigationController = UINavigationController(rootViewController: startVC)
             navigationController.modalPresentationStyle = .fullScreen
             navigationController.setNavigationBarHidden(true, animated: false)
+            
+            SoundManager.shared.stopBackgroundMusic()
+            
             self.present(navigationController, animated: true, completion: nil)
         } else {
             print("MenuViewController no está completamente cargado o visible")
         }
     }
+
 }
 
 extension UIView {

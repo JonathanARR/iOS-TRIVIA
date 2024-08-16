@@ -32,7 +32,7 @@ class SplashWindowViewController: UIViewController {
     
     func animateProgress() {
         Timer.scheduledTimer(withTimeInterval: 0.02, repeats: true) { timer in
-            self.pgvCarga.progress += 0.02
+            self.pgvCarga.progress += 0.05
             if self.pgvCarga.progress >= 1.0 {
                 timer.invalidate()
                 self.performSegue(withIdentifier: "sgSplash", sender: self)

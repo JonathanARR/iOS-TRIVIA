@@ -12,13 +12,14 @@ class SoundManager: NSObject {
     static let shared = SoundManager()
     var backgroundMusicPlayer: AVAudioPlayer?
     var soundEffectPlayer: AVAudioPlayer?
-    
+    var isMuted: Bool = false
+        
     private override init() {
         super.init()
     }
     
     func playBackgroundMusic(_ filename: String) {
-        if let path = Bundle.main.path(forResource: filename, ofType: "mp3") {
+        if let path = Bundle.main.path(forResource: filename, ofType: nil) {
             let url = URL(fileURLWithPath: path)
             do {
                 backgroundMusicPlayer = try AVAudioPlayer(contentsOf: url)
@@ -27,9 +28,11 @@ class SoundManager: NSObject {
             } catch {
                 print("Error playing background music: \(error.localizedDescription)")
             }
+        } else {
+            print("File not found: \(filename)")
         }
     }
-
+    
     func stopBackgroundMusic() {
         backgroundMusicPlayer?.stop()
     }
@@ -44,5 +47,17 @@ class SoundManager: NSObject {
                 print("Error playing sound effect: \(error.localizedDescription)")
             }
         }
+    }
+    
+    func mute() {
+        isMuted = true
+        backgroundMusicPlayer?.volume = 0
+        soundEffectPlayer?.volume = 0
+    }
+    
+    func unmute() {
+        isMuted = false
+        backgroundMusicPlayer?.volume = 1
+        soundEffectPlayer?.volume = 1
     }
 }

@@ -1,6 +1,7 @@
 import UIKit
 
 class GameViewController: UIViewController {
+    @IBOutlet weak var viewQuestion: UIView!
     @IBOutlet weak var lblQuestionIndex: UILabel!
     @IBOutlet weak var lblTimer: UILabel!
     @IBOutlet weak var lblLives: UILabel!
@@ -20,6 +21,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewQuestion.makeRoundView(cornerRadius: 2.5)
         game = Game(questions: QuestionLoader.loadQuestions())
         startNewGame()
     }
@@ -43,18 +45,38 @@ class GameViewController: UIViewController {
         btnA3.setTitle(question.options[2], for: .normal)
         btnA4.setTitle(question.options[3], for: .normal)
         
-        // Actualizar UI después de cargar una nueva pregunta
+        resetButtonColors()
+        
         updateUI()
     }
     
     @IBAction func answerSelected(_ sender: UIButton) {
-        guard let answer = sender.title(for: .normal) else {return}
+        guard let answer = sender.title(for: .normal) else { return }
         let correct = game.checkAnswer(answer)
+        
+        animateButton(sender, correct: correct)
         
         if game.isGameOver() {
             endGame()
         } else {
-            loadNextQuestion()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+                self?.loadNextQuestion()
+            }
+        }
+    }
+    
+    func animateButton(_ button: UIButton, correct: Bool) {
+        UIView.animate(withDuration: 0.3) {
+            button.backgroundColor = correct ? .green : .red
+            button.setTitleColor(.white, for: .normal)
+        }
+    }
+    
+    func resetButtonColors() {
+        let buttons = [btnA1, btnA2, btnA3, btnA4]
+        for button in buttons {
+            button?.backgroundColor = .systemBackground
+            button?.setTitleColor(.black, for: .normal)
         }
     }
     

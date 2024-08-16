@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4B142F2C6FF8D500A7B4C8 /* wrong-answer-129254.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B14282C6FF8D500A7B4C8 /* wrong-answer-129254.mp3 */; };
+		0D4B14302C6FF8D500A7B4C8 /* wrong-47985.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B14292C6FF8D500A7B4C8 /* wrong-47985.mp3 */; };
+		0D4B14312C6FF8D500A7B4C8 /* correct-156911.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B142A2C6FF8D500A7B4C8 /* correct-156911.mp3 */; };
+		0D4B14322C6FF8D500A7B4C8 /* clock-alarm-8761.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B142B2C6FF8D500A7B4C8 /* clock-alarm-8761.mp3 */; };
+		0D4B14332C6FF8D500A7B4C8 /* negative_beeps-6008.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B142C2C6FF8D500A7B4C8 /* negative_beeps-6008.mp3 */; };
+		0D4B14342C6FF8D500A7B4C8 /* second-hand-149907.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B142D2C6FF8D500A7B4C8 /* second-hand-149907.mp3 */; };
+		0D4B14352C6FF8D500A7B4C8 /* WiiSports-BoxingResultsMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B142E2C6FF8D500A7B4C8 /* WiiSports-BoxingResultsMusic.mp3 */; };
 		0D4FB7732C6CF1D3004F764C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FB7722C6CF1D3004F764C /* AppDelegate.swift */; };
 		0D4FB7752C6CF1D3004F764C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FB7742C6CF1D3004F764C /* SceneDelegate.swift */; };
 		0D4FB7772C6CF1D3004F764C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FB7762C6CF1D3004F764C /* ViewController.swift */; };
@@ -36,6 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D4B14282C6FF8D500A7B4C8 /* wrong-answer-129254.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wrong-answer-129254.mp3"; sourceTree = "<group>"; };
+		0D4B14292C6FF8D500A7B4C8 /* wrong-47985.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wrong-47985.mp3"; sourceTree = "<group>"; };
+		0D4B142A2C6FF8D500A7B4C8 /* correct-156911.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "correct-156911.mp3"; sourceTree = "<group>"; };
+		0D4B142B2C6FF8D500A7B4C8 /* clock-alarm-8761.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "clock-alarm-8761.mp3"; sourceTree = "<group>"; };
+		0D4B142C2C6FF8D500A7B4C8 /* negative_beeps-6008.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "negative_beeps-6008.mp3"; sourceTree = "<group>"; };
+		0D4B142D2C6FF8D500A7B4C8 /* second-hand-149907.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "second-hand-149907.mp3"; sourceTree = "<group>"; };
+		0D4B142E2C6FF8D500A7B4C8 /* WiiSports-BoxingResultsMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "WiiSports-BoxingResultsMusic.mp3"; sourceTree = "<group>"; };
 		0D4FB76F2C6CF1D3004F764C /* TRIVIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRIVIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4FB7722C6CF1D3004F764C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D4FB7742C6CF1D3004F764C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +93,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D4B14272C6FF8D500A7B4C8 /* Audio-TRIVIA */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B14282C6FF8D500A7B4C8 /* wrong-answer-129254.mp3 */,
+				0D4B14292C6FF8D500A7B4C8 /* wrong-47985.mp3 */,
+				0D4B142A2C6FF8D500A7B4C8 /* correct-156911.mp3 */,
+				0D4B142B2C6FF8D500A7B4C8 /* clock-alarm-8761.mp3 */,
+				0D4B142C2C6FF8D500A7B4C8 /* negative_beeps-6008.mp3 */,
+				0D4B142D2C6FF8D500A7B4C8 /* second-hand-149907.mp3 */,
+				0D4B142E2C6FF8D500A7B4C8 /* WiiSports-BoxingResultsMusic.mp3 */,
+			);
+			name = "Audio-TRIVIA";
+			path = "../../Audio-TRIVIA";
+			sourceTree = "<group>";
+		};
 		0D4FB7662C6CF1D3004F764C = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +135,11 @@
 				0D4FB77B2C6CF1D4004F764C /* Assets.xcassets */,
 				0DB6AB8D2C6D5339009D8E89 /* questions.json */,
 				0D4FB7802C6CF1D4004F764C /* Info.plist */,
-				0DB6AB912C6D54CB009D8E89 /* Models */,
 				0DB6AB882C6D496E009D8E89 /* Views */,
-				0DA774062C6E846600E60F2F /* Resources-Trivia */,
+				0DB6AB912C6D54CB009D8E89 /* Models */,
 				0DB6AB972C6D603A009D8E89 /* Managers */,
+				0DA774062C6E846600E60F2F /* Resources-Trivia */,
+				0D4B14272C6FF8D500A7B4C8 /* Audio-TRIVIA */,
 			);
 			path = JUEGO;
 			sourceTree = "<group>";
@@ -246,13 +276,20 @@
 			files = (
 				0D4FB77F2C6CF1D4004F764C /* LaunchScreen.storyboard in Resources */,
 				0DB6AB8E2C6D5339009D8E89 /* questions.json in Resources */,
+				0D4B14352C6FF8D500A7B4C8 /* WiiSports-BoxingResultsMusic.mp3 in Resources */,
 				0DA774112C6E846600E60F2F /* quiz.png in Resources */,
+				0D4B14332C6FF8D500A7B4C8 /* negative_beeps-6008.mp3 in Resources */,
 				0D4FB77C2C6CF1D4004F764C /* Assets.xcassets in Resources */,
 				0DA7740D2C6E846600E60F2F /* quiz_w.png in Resources */,
 				0DA7740F2C6E846600E60F2F /* bg-removebg-preview.png in Resources */,
+				0D4B14312C6FF8D500A7B4C8 /* correct-156911.mp3 in Resources */,
 				0DA774102C6E846600E60F2F /* avatar0.png in Resources */,
+				0D4B14342C6FF8D500A7B4C8 /* second-hand-149907.mp3 in Resources */,
+				0D4B14302C6FF8D500A7B4C8 /* wrong-47985.mp3 in Resources */,
 				0D4FB77A2C6CF1D3004F764C /* Main.storyboard in Resources */,
+				0D4B14322C6FF8D500A7B4C8 /* clock-alarm-8761.mp3 in Resources */,
 				0DA7740E2C6E846600E60F2F /* MTLogo.jpg in Resources */,
+				0D4B142F2C6FF8D500A7B4C8 /* wrong-answer-129254.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
