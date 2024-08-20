@@ -9,6 +9,8 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var imvVolume: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,10 +20,10 @@ class InfoViewController: UIViewController {
     @IBAction func toggleMute(_ sender: UIButton) {
         if SoundManager.shared.isMuted {
             SoundManager.shared.unmute()
-            sender.setTitle("Mute", for: .normal)
+            imvVolume.image = UIImage(systemName: "speaker.fill")
         } else {
             SoundManager.shared.mute()
-            sender.setTitle("Unmute", for: .normal)
+            imvVolume.image = UIImage(systemName: "speaker.slash.fill")
         }
     }
 

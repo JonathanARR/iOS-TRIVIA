@@ -5,7 +5,6 @@ class Game {
     var lives: Int = 3
     
     init(questions: [Question]) {
-        // Aleatorizar las preguntas
         self.questions = questions.shuffled()
     }
 

@@ -7,13 +7,18 @@
 
 import UIKit
 
-class Player: NSObject {
+class Player: NSObject, Codable {
     var name: String
     var score: Int
-    var avatar = "avatar0.png"
+    var avatar: String
     
-    init(name: String, score: Int) {
+    init(name: String, score: Int, avatar: String = "avatar0.png") {
         self.name = name
         self.score = score
+        self.avatar = avatar
+    }
+    
+    override var description: String {
+        return "Name: \(name), Score: \(score), Avatar: \(avatar)"
     }
 }

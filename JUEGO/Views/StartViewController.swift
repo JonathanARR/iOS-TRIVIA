@@ -37,7 +37,6 @@ class StartViewController: UIViewController {
         seconds -= 1
         if seconds <= 0 {
             countdownTimer.invalidate()
-            // Esperar a que la barra de progreso se complete antes de realizar la transición
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.performSegue(withIdentifier: "sgGame", sender: self)
             }

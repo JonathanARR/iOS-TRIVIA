@@ -38,14 +38,17 @@ class SoundManager: NSObject {
     }
 
     func playSoundEffect(_ filename: String) {
-        if let path = Bundle.main.path(forResource: filename, ofType: "mp3") {
+        if let path = Bundle.main.path(forResource: filename, ofType: nil) {
             let url = URL(fileURLWithPath: path)
             do {
+                soundEffectPlayer?.stop() 
                 soundEffectPlayer = try AVAudioPlayer(contentsOf: url)
                 soundEffectPlayer?.play()
             } catch {
                 print("Error playing sound effect: \(error.localizedDescription)")
             }
+        } else {
+            print("File not found: \(filename)")
         }
     }
     

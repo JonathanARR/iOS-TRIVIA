@@ -25,6 +25,11 @@ class GameViewController: UIViewController {
         game = Game(questions: QuestionLoader.loadQuestions())
         startNewGame()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        SoundManager.shared.playBackgroundMusic("second-hand-149907.mp3")
+    }
 
     func startNewGame() {
         game.resetGame()
@@ -54,19 +59,22 @@ class GameViewController: UIViewController {
         guard let answer = sender.title(for: .normal) else { return }
         let correct = game.checkAnswer(answer)
         
+        let soundName = correct ? "correct-156911.mp3" : "wrong-answer-129254.mp3"
+        SoundManager.shared.playSoundEffect(soundName)
+        
         animateButton(sender, correct: correct)
         
         if game.isGameOver() {
             endGame()
         } else {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { [weak self] in
                 self?.loadNextQuestion()
             }
         }
     }
     
     func animateButton(_ button: UIButton, correct: Bool) {
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: 0.1) {
             button.backgroundColor = correct ? .green : .red
             button.setTitleColor(.white, for: .normal)
         }
@@ -101,6 +109,7 @@ class GameViewController: UIViewController {
         
         if remainingTime <= 0 {
             countdownTimer?.invalidate()
+            SoundManager.shared.playSoundEffect("clock-alarm-8761.mp3")
             endGame()
         }
     }
@@ -113,10 +122,18 @@ class GameViewController: UIViewController {
     
     func endGame() {
         countdownTimer?.invalidate()
-        print(player.name)
+        player.score = game.getScore()
+        SoundManager.shared.stopBackgroundMusic()
+        
+        print("Player Name: \(player.name), Score: \(player.score)")
         
         let alert = UIAlertController(title: "Game Over", message: "Your score: \(game.getScore())", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            RecordsManager.shared.addRecord(self.player)
+            
+            // print("Records after adding: \(RecordsManager.shared.getTopRecords())")
+            
+            SoundManager.shared.playBackgroundMusic("WiiSports-BoxingResultsMusic.mp3")
             self.dismiss(animated: true, completion: nil)
         }))
         present(alert, animated: true, completion: nil)

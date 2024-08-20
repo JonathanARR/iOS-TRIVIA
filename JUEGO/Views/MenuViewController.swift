@@ -1,11 +1,13 @@
 import UIKit
 
-class MenuViewController: UIViewController, UITextFieldDelegate {
+class MenuViewController: UIViewController, UITextFieldDelegate, AvatarsViewControllerDelegate {
 
     @IBOutlet weak var viewAvatar: UIView!
     @IBOutlet weak var imvAvatar: UIImageView!
     @IBOutlet weak var txfNickname: UITextField!
     @IBOutlet weak var btnStart: UIButton!
+    
+    var playerAvatar = "avatar0.png"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,7 @@ class MenuViewController: UIViewController, UITextFieldDelegate {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
 
-        updateStartButtonState(isEnabled: false) // Inicializar el botón como deshabilitado
+        updateStartButtonState(isEnabled: false)
     }
     
     override func viewDidLayoutSubviews() {
@@ -27,6 +29,11 @@ class MenuViewController: UIViewController, UITextFieldDelegate {
         btnStart.makeRoundView(cornerRadius: 5.0)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        imvAvatar.image = UIImage(named: playerAvatar)
+    }
+
     @objc func textFieldDidChange(_ textField: UITextField) {
         if let text = textField.text, isValidNickname(text) {
             updateStartButtonState(isEnabled: true)
@@ -38,7 +45,7 @@ class MenuViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == txfNickname {
             startGame(btnStart)
-            textField.resignFirstResponder() // Oculta el teclado
+            textField.resignFirstResponder()
         }
         return true
     }
@@ -87,7 +94,8 @@ class MenuViewController: UIViewController, UITextFieldDelegate {
                 return
             }
 
-            let player = Player(name: txfNickname.text ?? "N", score: 0)
+            let player = Player(name: txfNickname.text ?? "N", score: 0, avatar: playerAvatar)
+            print(player)
             startVC.player = player
             let navigationController = UINavigationController(rootViewController: startVC)
             navigationController.modalPresentationStyle = .fullScreen
@@ -100,17 +108,32 @@ class MenuViewController: UIViewController, UITextFieldDelegate {
             print("MenuViewController no está completamente cargado o visible")
         }
     }
+    
+    func didSelectAvatar(_ avatarName: String) {
+        playerAvatar = avatarName
+        imvAvatar.image = UIImage(named: playerAvatar)
+    }
 
+    @IBAction func selectAvatar(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let avatarsVC = storyboard.instantiateViewController(withIdentifier: "AvatarsViewController") as? AvatarsViewController {
+            avatarsVC.delegate = self
+            avatarsVC.modalPresentationStyle = .automatic
+            present(avatarsVC, animated: true, completion: nil)
+        }
+    }
 }
 
 extension UIView {
     func makeRoundView(cornerRadius: CGFloat? = nil) {
-        if let radius = cornerRadius {
-            self.layer.cornerRadius = radius
-        } else {
-            self.layer.cornerRadius = self.frame.size.width / 2.0
+        DispatchQueue.main.async {
+            if let radius = cornerRadius {
+                self.layer.cornerRadius = radius
+            } else {
+                self.layer.cornerRadius = self.frame.size.width / 2.0
+            }
+            self.clipsToBounds = true
         }
-        self.clipsToBounds = true
     }
 }
 
